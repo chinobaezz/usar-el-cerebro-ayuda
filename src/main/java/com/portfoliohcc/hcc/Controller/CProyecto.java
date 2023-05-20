@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/proyecto")
+@RequestMapping("/proyect")
 @CrossOrigin("*")//(origins = {"https://porfolio-hcc.web.app","http://localhost:4200"})
 public class CProyecto {
     

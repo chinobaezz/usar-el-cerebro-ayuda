@@ -28,12 +28,7 @@ public class Estudio {
     private Date inicio;
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date fin; 
-    @Lob
-    @NotNull
-    private String descripcion;    
-    private String imagen;
-    private String url;
-    private String institucion;
+   
     
      //relacion
     @ManyToOne
@@ -48,14 +43,10 @@ public class Estudio {
     public Estudio() {
     }
 
-    public Estudio(String estudio, Date inicio, Date fin, String descripcion, String imagen, String url, String institucion, Persona persona) {
+    public Estudio(String estudio, Date inicio, Date fin, Persona persona) {
         this.estudio = estudio;
         this.inicio = inicio;
         this.fin = fin;
-        this.descripcion = descripcion;
-        this.imagen = imagen;
-        this.url = url;
-        this.institucion = institucion;
         this.persona = persona;
     }
 
@@ -91,39 +82,6 @@ public class Estudio {
         this.fin = fin;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public String getImagen() {
-        return imagen;
-    }
-
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public String getInstitucion() {
-        return institucion;
-    }
-
-    public void setInstitucion(String institucion) {
-        this.institucion = institucion;
-    }
- //Opción para que no haga un bug
-    @JsonBackReference
     public Persona getPersona() {
         return persona;
     }
@@ -141,7 +99,6 @@ public class Estudio {
     }
 
    
-
    
     
 }

@@ -40,6 +40,7 @@ public class PersonaController {
     @PostMapping("/create")
     public void save(@RequestBody Persona persona){
         IPersonaService.save(persona);
+       
     }
     
    

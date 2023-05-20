@@ -1,4 +1,7 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package com.portfoliohcc.hcc.Entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
@@ -18,7 +21,7 @@ import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 public class Experiencia {
-    @Id
+  @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotNull
@@ -156,7 +159,6 @@ public class Experiencia {
         this.personaid = personaid;
     }
 
-    
     
     
     
