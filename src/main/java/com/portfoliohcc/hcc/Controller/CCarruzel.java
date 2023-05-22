@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("carruzel")
-//@CrossOrigin("*")
-@CrossOrigin(origins= "https://portafolioback-fqb8.onrender.com")
+@CrossOrigin("*")
+//@CrossOrigin(origins= "https://portafolioback-fqb8.onrender.com")
 public class CCarruzel {
  @Autowired
    private SCarruzel carruServ;
