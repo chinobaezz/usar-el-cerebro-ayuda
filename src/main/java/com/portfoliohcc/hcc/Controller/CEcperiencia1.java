@@ -26,7 +26,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("ecperiencia")
-@CrossOrigin(origins= "https://portafolioback-fqb8.onrender.com")
+@CrossOrigin("*")
+//@CrossOrigin(origins= "https://portafolioback-fqb8.onrender.com")
 public class CEcperiencia1 {
     
     
