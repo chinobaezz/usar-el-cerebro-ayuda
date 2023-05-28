@@ -42,6 +42,11 @@ public class CEstudio1 {
         return estudServ.verEstudio1();
     }
     
+    @GetMapping("/lista/saludar")
+    public String saludar(){
+        return "bienvenido Arg";
+    }
+    
     @GetMapping("/ver/{id}")
     @ResponseBody
     public Estudio1 verEstudio1(@PathVariable int id){
